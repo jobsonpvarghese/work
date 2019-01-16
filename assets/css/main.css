@@ -509,7 +509,7 @@ body {
 }
 .college-name{
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .intro {
     position: relative;
@@ -550,6 +550,9 @@ body {
     position: relative;
     height: 475px;
     padding-top: 5%;
+}
+.grandeur{
+    color:  #0f33ff;
 }
 .intro--banner::before {
     content: "";
@@ -608,9 +611,11 @@ body {
     fill: rgb(187, 52, 11);
 }
 .intro--banner img {
+    height: 400px;
     position: absolute;
-    bottom: 25%;
-    right: -12px;
+    opacity: .1;
+    bottom: 16%;
+    right: 5%;
 }
 .intro--options {
     display: -webkit-box;
@@ -659,9 +664,21 @@ body {
     margin-right: 0;
 }
 }@media (max-width: 767px) {
+    .intro-bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
     .college-name{
         text-align: center;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 10px;
         padding-bottom: 30%;
         padding-left: 5%;
@@ -1499,7 +1516,7 @@ body {
     width: 110%;
     height: 15px;
     opacity: 0;
-    background-color: #0f33ff;
+    background-color: #3a4bad;
 }
 .outer-nav>li.is-active::before {
     opacity: 1;
